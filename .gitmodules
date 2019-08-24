@@ -1,0 +1,3 @@
+[submodule "projects/documentation"]
+	path = projects/documentation
+	url = https://github.com/tihomir22/MetaCortex-DOC

@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~prismjs/themes/prism-flow.css";
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+.fullScreen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+pre::-webkit-scrollbar {
+  width: 0.2em;
+  height: 0.2em;
+}
+
+pre::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: red;
+  outline: 1px solid red;
+}

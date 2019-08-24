@@ -1,0 +1,36 @@
+<div class="container py-md">
+  <div class="row row-grid justify-content-between align-items-center">
+    <div class="col-lg-6">
+      <h3 class="display-3">
+        A beautiful documentation
+        <span>completed with examples</span>
+      </h3>
+      <p class="lead">
+        The documentation design was built by the latest frontend technology for
+        advanced docs. We use
+        <a
+          href="https://github.com/sourcey/spectacle"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Spectable</a
+        >
+        to offer the best look and functionability for our customers. Of course,
+        all our documentation is well tested and well performing for every kind
+        of mobile dispositive or machine you want to use with.
+      </p>
+      <div class="btn-wrapper">
+        <a [routerLink]="['/docs']" class="btn btn-success"
+          >View documentation</a
+        >
+      </div>
+    </div>
+    <div class="col-lg-5 mb-lg-auto">
+      <div class="transform-perspective-right">
+        <ngx-prism [language]="language">{{ content }}</ngx-prism>
+        <ngx-prism [language]="language2">
+          {{ content2 }}
+        </ngx-prism>
+      </div>
+    </div>
+  </div>
+</div>
