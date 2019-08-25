@@ -60,9 +60,12 @@
                   <i class="ni ni-spaceship"></i>
                 </div>
                 <div class="media-body ml-3">
-                  <h6 class="heading text-primary mb-md-1">View documentation</h6>
+                  <h6 class="heading text-primary mb-md-1">
+                    View documentation
+                  </h6>
                   <p class="description d-none d-md-inline-block mb-0">
-                    Learn how to use Badger API , view all the responses and technical indicators functions avalaible.
+                    Learn how to use Badger API , view all the responses and
+                    technical indicators functions avalaible.
                   </p>
                 </div>
               </a>
@@ -79,7 +82,7 @@
 
               <a
                 routerLinkActive="active"
-                [routerLink]="['documentation/alerts']"
+                [ngx-scroll-to]="'#examples'"
                 class="media d-flex align-items-center"
               >
                 <div
@@ -90,28 +93,34 @@
                 <div class="media-body ml-3">
                   <h5 class="heading text-warning mb-md-1">Examples</h5>
                   <p class="description d-none d-md-inline-block mb-0">
-                    Browse our community examples on using Badger API for doing professional projects.
+                    Browse our community examples on using Badger API for doing
+                    professional projects.
                   </p>
                 </div>
               </a>
             </div>
           </div>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
-            <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Examples</span>
+
+        <li class="nav-item">
+          <a
+            routerLinkActive="active"
+            [ngx-scroll-to]="'#dialogoContacto'"
+            class="nav-link no-caret likeBtn"
+          >
+            Contact Us
           </a>
-          <div class="dropdown-menu">
+          <!--<div class="dropdown-menu">
             <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
             <a [routerLink]="['/user-profile']" class="dropdown-item"
               >Profile</a
             >
             <a [routerLink]="['/login']" class="dropdown-item">Login</a>
             <a [routerLink]="['/register']" class="dropdown-item">Register</a>
-          </div>
+          </div>-->
         </li>
       </ul>
+      <!--
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
           <a
@@ -174,6 +183,7 @@
           </a>
         </li>
       </ul>
+      -->
     </div>
   </div>
 </nav>

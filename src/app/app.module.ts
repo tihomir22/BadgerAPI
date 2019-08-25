@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+
 
 @NgModule({
   declarations: [
@@ -23,8 +25,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     RouterModule,
     AppRoutingModule,
-    
     NgbModule.forRoot(),
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,19 +6,33 @@ import { BaseLandingComponent } from "./base-landing/base-landing.component";
 import { AvatarModule } from "ngx-avatar";
 import { HttpClientModule } from "@angular/common/http";
 import { RespuestaDocumentacionComponent } from "./secciones/respuesta-documentacion/respuesta-documentacion.component";
-import { PrismModule } from '@ngx-prism/core';
-import { EjemploGithub01Component } from './secciones/ejemplo-github01/ejemplo-github01.component';
-import { AboutUsComponent } from './secciones/about-us/about-us.component';
-import { ContactoComponent } from './secciones/contacto/contacto.component';
+import { PrismModule } from "@ngx-prism/core";
+import { EjemploGithub01Component } from "./secciones/ejemplo-github01/ejemplo-github01.component";
+import { AboutUsComponent } from "./secciones/about-us/about-us.component";
+import { ContactoComponent } from "./secciones/contacto/contacto.component";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { NgxSpinnerModule } from 'ngx-spinner';
+
 
 @NgModule({
-  declarations: [BaseLandingComponent, RespuestaDocumentacionComponent, EjemploGithub01Component, AboutUsComponent, ContactoComponent],
+  declarations: [
+    BaseLandingComponent,
+    RespuestaDocumentacionComponent,
+    EjemploGithub01Component,
+    AboutUsComponent,
+    ContactoComponent
+  ],
   imports: [
     CommonModule,
     LandingRoutingModule,
     HttpClientModule,
     AvatarModule,
-    PrismModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule,
+    PrismModule,
+    NgxSpinnerModule
   ]
 })
 export class LandingModule {}
