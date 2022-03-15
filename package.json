@@ -34,7 +34,7 @@
     "@types/swagger-schema-official": "^2.0.18",
     "jquery": "^3.4.1",
     "jw-bootstrap-switch-ng2": "2.0.5",
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.21",
     "ng2-nouislider": "1.7.13",
     "ngx-avatar": "^3.7.0",
     "ngx-spinner": "^7.2.0",
